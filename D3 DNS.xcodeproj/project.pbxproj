@@ -11,6 +11,8 @@
 		695F80D124C4718800F098B0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695F80D024C4718800F098B0 /* ContentView.swift */; };
 		695F80D324C4718A00F098B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 695F80D224C4718A00F098B0 /* Assets.xcassets */; };
 		695F80D624C4718A00F098B0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 695F80D524C4718A00F098B0 /* Preview Assets.xcassets */; };
+		695F80E224C4830700F098B0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695F80E124C4830700F098B0 /* Constants.swift */; };
+		695F80E524C4883D00F098B0 /* DNSProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695F80E424C4883D00F098B0 /* DNSProxy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		695F80D224C4718A00F098B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		695F80D524C4718A00F098B0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		695F80D724C4718A00F098B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		695F80E124C4830700F098B0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		695F80E424C4883D00F098B0 /* DNSProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DNSProxy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,10 +56,12 @@
 		695F80CD24C4718800F098B0 /* D3 DNS */ = {
 			isa = PBXGroup;
 			children = (
-				695F80CE24C4718800F098B0 /* D3_DNSApp.swift */,
-				695F80D024C4718800F098B0 /* ContentView.swift */,
-				695F80D224C4718A00F098B0 /* Assets.xcassets */,
+				695F80E024C482F900F098B0 /* helper */,
+				695F80DF24C4812100F098B0 /* controller */,
+				695F80DE24C4811900F098B0 /* view */,
+				695F80DD24C4811300F098B0 /* model */,
 				695F80D724C4718A00F098B0 /* Info.plist */,
+				695F80D224C4718A00F098B0 /* Assets.xcassets */,
 				695F80D424C4718A00F098B0 /* Preview Content */,
 			);
 			path = "D3 DNS";
@@ -67,6 +73,38 @@
 				695F80D524C4718A00F098B0 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		695F80DD24C4811300F098B0 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				695F80E424C4883D00F098B0 /* DNSProxy.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		695F80DE24C4811900F098B0 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				695F80D024C4718800F098B0 /* ContentView.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		695F80DF24C4812100F098B0 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				695F80CE24C4718800F098B0 /* D3_DNSApp.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		695F80E024C482F900F098B0 /* helper */ = {
+			isa = PBXGroup;
+			children = (
+				695F80E124C4830700F098B0 /* Constants.swift */,
+			);
+			path = helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +176,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				695F80E524C4883D00F098B0 /* DNSProxy.swift in Sources */,
 				695F80D124C4718800F098B0 /* ContentView.swift in Sources */,
 				695F80CF24C4718800F098B0 /* D3_DNSApp.swift in Sources */,
+				695F80E224C4830700F098B0 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
