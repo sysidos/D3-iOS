@@ -21,9 +21,14 @@ struct Constants {
         static let stop = Color.red
     }
 
+    struct dns {
+        static let providerConfiguration = ["d3.0x29a.ml": server]
+    }
+    
     struct images {
         static let background = "background"
         static let logo = "logo"
+        static let loader = "loader"
     }
 
     struct screens {

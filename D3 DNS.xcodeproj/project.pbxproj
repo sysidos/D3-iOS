@@ -3,19 +3,22 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		054014CE56A738E7947B2864 /* Pods_D3_DNS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5ABD7BFE2F8876A2B283B51E /* Pods_D3_DNS.framework */; };
 		695F80CF24C4718800F098B0 /* D3_DNSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695F80CE24C4718800F098B0 /* D3_DNSApp.swift */; };
 		695F80D124C4718800F098B0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695F80D024C4718800F098B0 /* ContentView.swift */; };
 		695F80D324C4718A00F098B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 695F80D224C4718A00F098B0 /* Assets.xcassets */; };
 		695F80D624C4718A00F098B0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 695F80D524C4718A00F098B0 /* Preview Assets.xcassets */; };
 		695F80E224C4830700F098B0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695F80E124C4830700F098B0 /* Constants.swift */; };
 		695F80E524C4883D00F098B0 /* DNSProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695F80E424C4883D00F098B0 /* DNSProxy.swift */; };
+		695F80E824C498D900F098B0 /* loader.gif in Resources */ = {isa = PBXBuildFile; fileRef = 695F80E724C498D900F098B0 /* loader.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5ABD7BFE2F8876A2B283B51E /* Pods_D3_DNS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_D3_DNS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		695F80CB24C4718800F098B0 /* D3 DNS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "D3 DNS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		695F80CE24C4718800F098B0 /* D3_DNSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = D3_DNSApp.swift; sourceTree = "<group>"; };
 		695F80D024C4718800F098B0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -24,6 +27,10 @@
 		695F80D724C4718A00F098B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		695F80E124C4830700F098B0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		695F80E424C4883D00F098B0 /* DNSProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DNSProxy.swift; sourceTree = "<group>"; };
+		695F80E724C498D900F098B0 /* loader.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loader.gif; sourceTree = "<group>"; };
+		69A8987624C49AA20052B8C1 /* D3 DNS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "D3 DNS.entitlements"; sourceTree = "<group>"; };
+		6BEEAF7B7111836C067427C8 /* Pods-D3 DNS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-D3 DNS.debug.xcconfig"; path = "Target Support Files/Pods-D3 DNS/Pods-D3 DNS.debug.xcconfig"; sourceTree = "<group>"; };
+		BFE7AA58E49886EFB2D2D501 /* Pods-D3 DNS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-D3 DNS.release.xcconfig"; path = "Target Support Files/Pods-D3 DNS/Pods-D3 DNS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +38,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				054014CE56A738E7947B2864 /* Pods_D3_DNS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1494155E85E86E9B23A29762 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5ABD7BFE2F8876A2B283B51E /* Pods_D3_DNS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		695F80C224C4718800F098B0 = {
 			isa = PBXGroup;
 			children = (
 				695F80CD24C4718800F098B0 /* D3 DNS */,
 				695F80CC24C4718800F098B0 /* Products */,
+				CC6B8DE72986AA00BECC95F3 /* Pods */,
+				1494155E85E86E9B23A29762 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +74,8 @@
 		695F80CD24C4718800F098B0 /* D3 DNS */ = {
 			isa = PBXGroup;
 			children = (
+				69A8987624C49AA20052B8C1 /* D3 DNS.entitlements */,
+				695F80E624C498B300F098B0 /* resources */,
 				695F80E024C482F900F098B0 /* helper */,
 				695F80DF24C4812100F098B0 /* controller */,
 				695F80DE24C4811900F098B0 /* view */,
@@ -107,6 +127,23 @@
 			path = helper;
 			sourceTree = "<group>";
 		};
+		695F80E624C498B300F098B0 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				695F80E724C498D900F098B0 /* loader.gif */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		CC6B8DE72986AA00BECC95F3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6BEEAF7B7111836C067427C8 /* Pods-D3 DNS.debug.xcconfig */,
+				BFE7AA58E49886EFB2D2D501 /* Pods-D3 DNS.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -114,9 +151,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 695F80DA24C4718A00F098B0 /* Build configuration list for PBXNativeTarget "D3 DNS" */;
 			buildPhases = (
+				60323501F7B8FFDE59719C69 /* [CP] Check Pods Manifest.lock */,
 				695F80C724C4718800F098B0 /* Sources */,
 				695F80C824C4718800F098B0 /* Frameworks */,
 				695F80C924C4718800F098B0 /* Resources */,
+				2FD21C0B24DE6F17E485342A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -164,12 +203,55 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				695F80E824C498D900F098B0 /* loader.gif in Resources */,
 				695F80D624C4718A00F098B0 /* Preview Assets.xcassets in Resources */,
 				695F80D324C4718A00F098B0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2FD21C0B24DE6F17E485342A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-D3 DNS/Pods-D3 DNS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-D3 DNS/Pods-D3 DNS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-D3 DNS/Pods-D3 DNS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		60323501F7B8FFDE59719C69 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-D3 DNS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		695F80C724C4718800F098B0 /* Sources */ = {
@@ -304,9 +386,11 @@
 		};
 		695F80DB24C4718A00F098B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BEEAF7B7111836C067427C8 /* Pods-D3 DNS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "D3 DNS/D3 DNS.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"D3 DNS/Preview Content\"";
 				DEVELOPMENT_TEAM = U2PJV837D8;
@@ -319,6 +403,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.sperixlabs.D3-DNS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -326,9 +411,11 @@
 		};
 		695F80DC24C4718A00F098B0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFE7AA58E49886EFB2D2D501 /* Pods-D3 DNS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "D3 DNS/D3 DNS.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"D3 DNS/Preview Content\"";
 				DEVELOPMENT_TEAM = U2PJV837D8;
@@ -341,6 +428,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.sperixlabs.D3-DNS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

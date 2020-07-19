@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SSSwiftUIGIFView
 
 struct ContentView: View {
     @ObservedObject var dnsProxy = DNSProxy()
@@ -41,18 +42,27 @@ struct ContentView: View {
                 .padding(20)
                 Spacer()
                 
+                if(dnsProxy.isRunning){
+                    SwiftUIGIFPlayerView(gifName: Constants.images.loader)
+                        .frame(width: 100, height: 50, alignment: .center)
+                        .padding(EdgeInsets(top: 0, leading: 0, bottom: 10, trailing: 0))
+                }
+                
             }
                 
             
         }
         .edgesIgnoringSafeArea(.all)
-        .padding(0)
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
-        
+        Group {
+            ContentView()
+                .previewDevice("iPhone 11")
+            ContentView()
+                .previewDevice("iPhone 8")
+        }
     }
 }
